@@ -7,7 +7,7 @@ import json from 'rollup-plugin-json'
 
 const pkg = require('./package.json')
 
-const libraryName = 'ts-node-spider'
+const libraryName = 'ts-axios-lib'
 
 export default {
   input: `src/${libraryName}.ts`,
