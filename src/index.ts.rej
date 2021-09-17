@@ -1,0 +1,12 @@
+diff a/src/index.ts b/src/index.ts	(rejected hunks)
+@@ -2,2 +2,2 @@
+-  // import "core-js/fn/array.find"
+-  // ...
++// import "core-js/fn/array.find"
++// ...
+@@ -11,4 +11 @@ let arr: PromiseFunc<string> = (a: string) => {
+-
+-export default class DummyClass {
+-
+-}
++export default class DummyClass {}
