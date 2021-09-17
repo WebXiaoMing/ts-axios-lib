@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "moduleResolution": "node",
+    "baseUrl": ".",
     "target": "es5",
     "module":"es2015",
     "lib": ["es2015", "es2016", "es2017", "dom"],
@@ -14,9 +15,22 @@
     "outDir": "dist/lib",
     "typeRoots": [
       "node_modules/@types"
-    ]
+    ],
+    "paths": {
+      "@/*": ["src/*"],
+      "@types/*": ["src/types/*"],
+      "@core/*": ["src/core/*"]
+    }
+  },
+  "typedocOptions": {
+    "entryPoints": ["src/index.ts"],
+    "out": "docs"
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "examples"
   ]
 }
